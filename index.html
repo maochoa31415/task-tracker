@@ -24,14 +24,16 @@
         <div class="task-tracker">
             <header>
                 <h1 class="title">Task Tracker</h1>
-                <form class="task-description-container">
+                <form class="task-description-container" autocomplete="off">
                     <input
                         class="description"
                         name="description"
                         type="text"
                         placeholder="Start writing and press enter to create task"
-                        required />
-                    <button class="btn-add-task" type="button">
+                        maxlength="1024"
+                        required
+                        autofocus />
+                    <button class="btn-add-task" type="submit" title="Add task">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
@@ -44,33 +46,11 @@
                 </form>
             </header>
 
-            <div class="task-list">
-                <div class="task">
-                    <input class="task-status" type="checkbox" />
-                    <span class="task-description">Task description</span>
-                    <button class="btn-remove-task" type="button">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="currentColor">
-                            <path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M9,8H11V17H9V8M13,8H15V17H13V8Z" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="task completed">
-                    <input class="task-status" type="checkbox" />
-                    <span class="task-description">Task description</span>
-                    <button class="btn-remove-task" type="button">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="currentColor">
-                            <path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M9,8H11V17H9V8M13,8H15V17H13V8Z" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
+            <div class="task-list"></div>
         </div>
     </main>
+
+    <script src="TraskTracker.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
