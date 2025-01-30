@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Tast Tracker</title>
+</head>
+<body>
+    <main class="main-container">
+        <div class="task-tracker">
+            <header>
+                <h1 class="title">Task Tracker</h1>
+                <form class="task-description-container">
+                    <input
+                        class="description"
+                        name="description"
+                        type="text"
+                        placeholder="Start writing and press enter to create task"
+                        required />
+                    <button class="btn-add-task" type="button">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24px"
+                            height="24px"
+                            fill="currentColor">
+                            <path d="M19,7V11H5.83L9.41,7.41L8,6L2,12L8,18L9.41,16.58L5.83,13H21V7H19Z" />
+                        </svg>
+                    </button>
+                </form>
+            </header>
+
+            <div class="task-list">
+                <div class="task">
+                    <input class="task-status" type="checkbox" />
+                    <span class="task-description">Task description</span>
+                    <button class="btn-remove-task" type="button">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M9,8H11V17H9V8M13,8H15V17H13V8Z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="task completed">
+                    <input class="task-status" type="checkbox" />
+                    <span class="task-description">Task description</span>
+                    <button class="btn-remove-task" type="button">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M9,8H11V17H9V8M13,8H15V17H13V8Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
